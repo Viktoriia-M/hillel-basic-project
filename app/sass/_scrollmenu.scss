@@ -1,0 +1,115 @@
+.scrollmenu {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.scrollmenu__links {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 30px;
+    >a {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #B3B3BA;
+        margin-right: 30px;
+    }
+}
+
+.scrollmenu__links a.active {
+    background:linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.scrollmenu__links a:not(.active):hover {
+    background:linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+
+.scrollmenu__services {
+    padding-top: 34px;
+    padding-bottom: 30px;
+    >h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+    >p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #FFFFFF;
+        font-style: normal;
+    }
+}
+
+.linkservis {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+}
+
+@media (min-width: 768px) {
+    .scrollmenu__services {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    >h2 {
+        font-size: 30px;
+        line-height: 37px;
+        }
+}
+
+@media (min-width: 992px) {
+    .scrollmenu {
+        display: flex;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        flex-wrap: wrap;
+    }
+
+    .scrollmenu__links {
+        flex-direction: column;
+        text-align: right;
+        width: 40%;
+        padding-right: 30px;
+        overflow-x:hidden;
+        border-right: 4px solid rgba(255, 255, 255, 0.3);
+        >a:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .scrollmenu__services {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 60px;
+        >h2 {
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+
+    .linkservis {
+        width: 100%;
+        margin-top: 75px;
+    }
+} 

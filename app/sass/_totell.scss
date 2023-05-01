@@ -1,0 +1,134 @@
+.totell {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.pink {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 30px;
+}
+
+.blue-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #24A3FF;
+    margin-bottom: 15px;
+}
+
+.grey-text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #B3B3BA;
+    margin-bottom: 15px;
+}
+
+.black-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.border {
+    border-top: 4px solid #E6E6F0;
+    padding-top: 15px;
+}
+
+.bg-white {
+    background: white;
+    padding: 30px;
+}
+
+.picture-index >img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item-3 .picture-team img {
+    display: none;
+}
+
+.item-3 .picture-index img {
+    display: block;
+}
+
+.grid__item {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .picture-index {
+         max-width: 100%;
+    }
+
+    .bg-white {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .grid__item {
+        display: flex;
+        flex-direction: column;
+        .bg-white {
+            flex-grow: 1;
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        grid-template-rows: auto;
+        align-items:stretch;
+    }
+
+    .grid__item:nth-child(3) {
+        grid-column-end: span 2;
+    }
+
+    .item-3 .picture-index {
+        display: none;
+    }
+
+    .item-3 .picture-team img{
+        display: block;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        grid-template-rows: auto;
+        align-items:stretch;
+    }
+
+    .item-3 .picture-team img {
+        display: none;
+    }
+    
+    .picture-index img {
+        width: 100%;
+        height: auto;
+    }
+
+    .item-3 .picture-index {
+        display: block;
+    }
+
+    .grid__item:nth-child(3) {
+        grid-column-end: span 1;
+    }
+}

@@ -1,0 +1,84 @@
+*{
+margin: 0;
+box-sizing: border-box;
+}
+
+.body {
+    font-family: 'montserrat', 'arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+    min-width: 375px;
+}
+
+.gradient {
+    background: url(../img/symbol.svg) no-repeat center top,
+    linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 0 0 12px 12px;
+}
+
+.gradient::after {
+    content: '';
+    background:  #CACADB;
+    position: absolute;
+    border-radius: 0 0 12px 12px;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+    height: 10px;
+}
+
+.gradient::before {
+    content: '';
+    background: #E7E7F2;
+    position: absolute;
+    border-radius: 0 0 12px 12px;
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
+    height: 10px;
+}
+
+.bg-grey {
+    background-color: #F5F5FA;
+}
+
+.container {
+    max-width: 1440px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0 30px; 
+    }
+    
+    a {
+        text-decoration: none;
+        &hover {
+            text-decoration: underline;
+        }
+}
+
+@media (min-width: 768px) {
+    .body {
+    background-size: 894px 1024px, 100% auto;
+    }
+
+    .container {
+        padding: 0 60px; 
+    }
+}
+
+@media (min-width: 992px) {
+    .body {
+    background-size: 670px 768px, 100% auto;
+    }
+}
+
+@media (min-width: 1300px) {
+    .body {
+        background-size: 697px 799px, 100% auto;
+        }
+}
+

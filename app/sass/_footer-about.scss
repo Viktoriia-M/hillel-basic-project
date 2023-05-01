@@ -1,0 +1,141 @@
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30px;
+    border-top: 2px solid #E6E6F0;
+    padding-top: 30px;
+}
+
+.footer-about__phone {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #46466E;
+}
+
+.phone {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.legal>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #B3B3BA;
+}
+
+.adress {
+    margin-bottom: 21px;
+    >p {
+        margin-bottom: 10px;
+    }
+}
+
+.contacts {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .footer-about {
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contacts {
+        display: flex;
+        order: 1;
+        align-items: center;
+        .phone::after {
+            content: "";
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #B3B3BA;
+            border-radius: 50%;
+            position: absolute;
+            right: -3px;
+            top: auto;
+            bottom: 5px;
+            margin-right: -10px;
+        }
+        .phone::before {
+            content: "";
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #B3B3BA;
+            border-radius: 50%;
+            position: absolute;
+            left: -3px;
+            top: auto;
+            bottom: 5px;
+            margin-left: -10px;
+        }
+    }
+
+    .legal {
+        order: 1;
+    }
+
+    .adress {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .grey-circle {
+        position: relative;
+    }
+
+    .phone {
+        position: relative;
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+
+    .adress p::after {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: #B3B3BA;
+        border-radius: 50%;
+        position: absolute;
+        right: -3px;
+        top: auto;
+        bottom: 5px;
+        margin-right: -10px;
+    }
+
+    .onmap {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .footer-about {
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .adress {
+        order: 1;
+    }
+
+    .contacts {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    .legal {
+        order: 2;
+    }
+    
+}

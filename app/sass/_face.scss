@@ -1,0 +1,164 @@
+.face {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__text {
+        background: #F5F5FA;
+        border-radius: 12px;
+        padding: 30px;
+        .pinktext {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 30px;
+            margin-top: 5px;
+        }
+    }
+}
+
+.work {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #B3B3BA;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B3B3BA;
+    margin-bottom: 6px;
+}
+
+.minicircles {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.ellipse {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #24A3FF;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.ellipse_mr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.ellipse.active {
+    opacity: 1;
+}
+
+.ellipse:not(.active):hover {
+    opacity: 1;
+}
+
+.face__mini {
+    background-image: url('../img/face.png');
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.face__medium,
+.face__big,
+.face__large {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .pinktext {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .face__medium {
+        background-image: url('../img/man_2.png');
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+    }
+
+    .face__mini,
+    .face__big,
+    .face__large {
+        display: none;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .face__section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .face__text {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linkservis {
+        margin-top: 0;
+    }
+
+    .minicircles {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .flexend {
+        margin-top: auto;
+    }
+
+    .face__big {
+        background-image: url('../img/man_3.png');
+        width: 40%;
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+    .face__mini,
+    .face__medium,
+    .face__large {
+        display: none;
+    }
+
+}
+@media (min-width: 1300px) {
+
+    .face__large {
+        background-image: url('../img/man_4.png');
+        width: 30%;
+        height: 344px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+    .face__text {
+        width: 70%;
+    }
+
+    .face__mini,
+    .face__big,
+    .face__medium {
+        display: none;
+    }
+}

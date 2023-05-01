@@ -1,0 +1,122 @@
+.achivements {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    >p {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $darkblue;
+        margin-bottom: 30px;
+    }
+}
+
+.item2,
+.item3,
+.item4 {
+    display: none;
+}
+
+.items {
+    padding-left: 60px;
+    padding-right: 60px;
+    .item1 {
+        background-color: white;
+        text-align: center;
+    }
+}
+
+.minicircles {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.ellipse {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $blue;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.ellipse_mr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.ellipse.active {
+    opacity: 1;
+}
+
+.ellipse:not(.active):hover {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .items {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        justify-content: space-between;
+        .item1 {
+            display: inline-block;
+            vertical-align: top;
+            background: $white;
+            border-radius: 12px;
+            width: 25%;
+            margin-right: 40px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        .item2 {
+            display: inline-block;
+            vertical-align: top;
+            background: $white;
+            border-radius: 12px;
+            width: 25%;
+            margin-right: 40px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        .item3 {
+            display: inline-block;
+            vertical-align: top;
+            background: $white;
+            border-radius: 12px;
+            width: 25%;
+            margin-right: 40px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        .item4 {
+            display: inline-block;
+            vertical-align: top;
+            background: $white;
+            border-radius: 12px;
+            width: 25%;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .items .item2 > img,
+        .items .item3 > img,
+        .items .item4 > img {
+            text-align: center;
+        }
+
+        .item1 img,
+        .item2 img,
+        .item3 img,
+        .item4 img {
+        display: block;
+        margin: 0 auto;
+        }
+    }
+
+}

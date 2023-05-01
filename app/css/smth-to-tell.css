@@ -1,0 +1,15 @@
+.smth-to-tell {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pink {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/*# sourceMappingURL=smth-to-tell.css.map */

@@ -1,0 +1,63 @@
+.idea {
+    padding-top: 30px;
+    &__text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+    }
+    &__div {
+        padding-bottom: 30px;
+    }
+    &__p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #323264;
+    }
+}
+
+.pinktitle1 {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mr-40 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.idea__numbers {
+    border-left: 4px solid #E6E6F0;
+    padding-left: 30px;
+}
+
+@media (min-width: 992px) {
+    .idea {
+        display: flex;
+        &__div {
+            width: 60%;
+            padding-right: 30px;
+        }
+        &__numbers {
+            width: 40%;
+        }
+    }
+
+}
+@media (min-width: 1300px) {
+    .idea {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}

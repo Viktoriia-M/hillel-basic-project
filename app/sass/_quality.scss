@@ -1,0 +1,53 @@
+.text > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.pinktitle {
+    padding-top: 10px;
+    >h2 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    
+}
+
+.quality {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+    .quality {
+        padding-top: 60px;
+    }
+
+    .quality__flex {
+        display: flex;
+    }
+    .text {
+        width: 50%;
+    }
+    .pinktitle {
+        width: 50%;
+        padding-left: 60px;
+        >h2 {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+
+    .text .mar-0 {
+        margin-bottom: 0;
+    }
+}
